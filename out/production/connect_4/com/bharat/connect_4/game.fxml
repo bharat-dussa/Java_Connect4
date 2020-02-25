@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="idgrid" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bharat.connect_4.Controller">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="294.0" minWidth="191.0" prefWidth="191.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertdiscspane" prefHeight="400.0" prefWidth="201.0" style="-fx-background-color: #D9F7F0;" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Pane prefHeight="158.0" prefWidth="191.0">
+               <children>
+                  <TextField fx:id="player1id" alignment="CENTER" layoutY="31.0" prefHeight="26.0" prefWidth="191.0" promptText="Enter Player1 name" />
+                  <TextField fx:id="player2id" alignment="CENTER" layoutY="66.0" prefHeight="26.0" prefWidth="191.0" promptText="Enter Player2 name" />
+                  <Button fx:id="setnameid" alignment="CENTER" layoutY="118.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="191.0" text="set name" />
+               </children>
+            </Pane>
+            <Region prefHeight="158.0" prefWidth="191.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="players" alignment="CENTER" prefHeight="30.0" prefWidth="301.0" text="playersOne" textFill="#f5f4f4">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="16.0" prefWidth="301.0" text="Turn" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
